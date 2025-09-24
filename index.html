@@ -3,12 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>My Resume</title>
+
+    <!-- Visual Design with CSS: Add basic styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafc;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        button {
+            background-color: #344adb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
+    <!-- Main Heading: Name will be filled in by JavaScript -->
     <h1 id="name">Your Name</h1>
+
+    <!-- Education Section -->
     <p id="education">Education goes here</p>
+
+    <!-- Experience Section -->
     <p id="experience">Experience goes here</p>
+
+    <!-- Accessibility Improvement: Profile image with alt text -->
+    <img src="careerfairimage.jpg" alt="Profile picture of the resume owner" width="150">
+
+    <!-- Interactive Button -->
+    <button onclick="showFunFact()">Show Fun Fact</button>
+
+    <!-- Dropdown (Interactivity/Personalization) -->
+    <label for="theme">Choose a theme:</label>
+    <select id="theme" onchange="changeTheme()">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+
+    <!-- External Link (Creative Addition) -->
+    <p>
+        <a href="https://www.linkedin.com/in/basleal-mezgebu/" target="_blank">Visit my LinkedIn</a>
+    </p>
+
+    <!-- Link to JavaScript file -->
     <script src="resume.js"></script>
-<button onclick="showFunFact()">Show Fun Fact</button>
 </body>
 </html>
